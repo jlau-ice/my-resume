@@ -11,6 +11,8 @@
 .head {
     height: 150px;
     border-top: #323e4f  solid 5px;
+    display: flex;
+    justify-content: space-between;
 }
 .education {
     height: 150px;
@@ -26,4 +28,24 @@
 }
 .self-evaluation {
     height: 230px;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-color {
+    color: #323e4f;
+}
+
+.text-small {
+    font-size: 12px;
+}
+
+.text-normal {
+    font-size: 14px;
+}
+
+.text-big {
+    font-size: 16px;
 }
