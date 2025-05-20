@@ -1,0 +1,29 @@
+﻿
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.resume {
+    box-shadow: #c8c8c8 1px 1px 8px;
+    width: 800px;
+}
+.head {
+    height: 150px;
+    border-top: #323e4f  solid 5px;
+}
+.education {
+    height: 150px;
+}
+.skill {
+    height: 230px;
+}
+.experience {
+    height: 230px;
+}
+.project {
+    height: 230px;
+}
+.self-evaluation {
+    height: 230px;
+}
