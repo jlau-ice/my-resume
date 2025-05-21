@@ -9,10 +9,14 @@
     width: 800px;
 }
 .head {
-    height: 150px;
     border-top: #323e4f  solid 5px;
     display: flex;
     justify-content: space-between;
+}
+.head-item {
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-between;
 }
 .education {
     height: 150px;
@@ -48,4 +52,29 @@
 
 .text-big {
     font-size: 16px;
+}
+
+.common-padding {
+    padding: 10px 20px;
+}
+
+.image-container {
+    position: relative;
+    --height: 140px;
+    width: calc(var(--height) * 7 / 9);
+    height: var(--height);
+}
+
+
+.image-style {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+}
+
+.horizontal-line {
+    height: 2px;
+    background: #323e4f;
 }
