@@ -11,15 +11,15 @@
     <div id="app" class="container">
         <div class="resume">
             <div class="head common-padding">
-                <div class="head-item">
-                    <div>甘某</div>
-                    <div>应聘岗位：全栈开发</div>
+                <div class="head-item head-item-title">
+                    <div class="text-30 text-bold">甘某</div>
+                    <div class="text-18 text-bold">应聘岗位：全栈开发</div>
                 </div>
-                <div class="head-item">
-                    <div>年龄：23</div>
-                    <div>联系方式：1565566....</div>
-                    <div>电子邮箱：jlau.ice@gmail.com</div>
-                    <div>籍贯：XXXX</div>
+                <div class="head-item ">
+                    <div><span class="text-bold">年龄：</span><span>23</span></div>
+                    <div><span class="text-bold">联系方式：</span><span>1565566....</span></div>
+                    <div><span class="text-bold">电子邮箱：</span><span>jlau.ice@gmail.com</span></div>
+                    <div><span class="text-bold">籍贯：</span><span>XXXX</span></div>
                 </div>
                 <div>
                     <div class="image-container">
@@ -27,23 +27,59 @@
                     </div>
                 </div>
             </div>
-            <div class="education common-padding">
+            <div class="education common-padding relative">
+                <div class="header">教育背景</div>
+                <div class="horizontal-line"></div>
+                <div class="flex justify-between mt-5px">
+                    <div class="text-bold">吉林农业大学(本科)</div>
+                    <div class="text-bold">数据科学与大数据技术</div>
+                    <div class="text-bold">2020.09 - 2024.06</div>
+                </div>
+                <div class="mt-5px flex gap-10px">
+                    <span class="text-bold">GPA：</span><span>4.01</span>
+                    <span class="text-bold">专业前1%</span><span>(1/65)</span>
+                </div>
+                <div class="mt-5px">
+                    <span class="text-bold">主修课程：</span><span>机器学习，算法分析与设计，Java 程序设计，python 程序设计，数据分析，数据结构等</span>
+                </div>
+            </div>
+            <div class="honor common-padding relative">
+                <div class="header">荣誉奖项</div>
+                <div class="horizontal-line"></div>
+                <div class="grid-container mt-5px">
+                    <div class="grid-item"><span class="bullet">●</span> 国家励志奖学金</div>
+                    <div class="grid-item"><span class="bullet">●</span> 优秀毕业论文</div>
+                    <div class="grid-item"><span class="bullet">●</span> 第十六届吉林省大学生程序设计大赛三等奖</div>
+                    <div class="grid-item"><span class="bullet">●</span> 四年所有奖学金</div>
+                </div>
+            </div>
+            <div class="skill common-padding relative">
+                <div class="header">专业技能</div>
+                <div class="horizontal-line"></div>
+                <div class="mt-5px">
+                    <div class="skill-item text-wrap"><span class="bullet">●</span> 具有扎实的 Java 编程基础，熟悉使用 Java 集合类如 ArrayList、HashMap 等，能熟练使用 Java8 的 Stream 流。</div>
+                    <div class="skill-item text-wrap"><span class="bullet">●</span> 熟练掌握 SSM、MyBatis-Plus、Spring Boot 等主流开发框架，熟悉使用 RocketMQ、Kafka、Redis、Nginx 等 常见中间件组件。</div>
+                    <div class="skill-item"><span class="bullet">●</span> 熟练掌握 Vue 3 及其 Composition API、生命周期管理，熟悉常用组件库（如 Element Plus、Ant Design Vue）， 具备扎实的 CSS 样式与响应式布局能力。</div>
+                    <div class="skill-item"><span class="bullet">●</span> 熟练使用 MySQ L 和 PostgreSQL，具备编写高效 SQL 查询的能力，掌握 MySQL 事务管理、binlog 配置与日志 管理、索引优化等技术，能够有效优化数据库性能与容错能力。</div>
+                    <div class="skill-item"><span class="bullet">●</span> 熟练使用 Linux 和 Docker 进行环境搭建与项目部署，能够独立完成服务部署与运行维护。</div>
+                    <div class="skill-item"><span class="bullet">●</span> 掌握常见数据结构（如数组、链表、树等）及其典型算法，具备将算法应用于业务场景的能力。</div>
+                    <div class="skill-item"><span class="bullet">●</span> 熟练使用 Cursor、Windsurf 等 AI 编程工具，具备根据场景灵活选择 ChatGPT、Claude 或搜索引擎（如 Google）的能力，高效解决开发问题。有个人专属的提示词库，能更高效的使用 AI 提高开发效率。</div>
+                    <div class="skill-item"><span class="bullet">●</span> 熟悉使用 pytorch，TensorFlow 等深度学习框架，能够进行模型的搭建和简单任务的训练</div>
+                    <div class="skill-item"><span class="bullet">●</span> 熟练使用 Dify、n8n 等开源工作流平台，能结合 Ollama，Xinference 等本地大模型组件，构建智能体与自动化任 务流。</div>
+                    <div class="skill-item"><span class="bullet">●</span> 熟练应用主流 TTS（如 CosyVoice、F5-TTS）和 ASR（如 Whisper、FunASR）模型，具备模型微调与优化经验。</div>
+                </div>
+            </div>
+            <div class="experience common-padding relative">
+                <div class="header">工作经历</div>
                 <div class="horizontal-line"></div>
             </div>
-            <div class="skill">
-
+            <div class="project common-padding relative">
+                <div class="header">项目经历</div>
+                <div class="horizontal-line"></div>
             </div>
-            <div class="experience">
-
-            </div>
-            <div class="project">
-
-            </div>
-            <div class="skill">
-
-            </div>
-            <div class="self-evaluation">
-
+            <div class="self-evaluation common-padding relative">
+                <div class="header">自我评价</div>
+                <div class="horizontal-line"></div>
             </div>
         </div>
     </div>
