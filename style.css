@@ -43,7 +43,7 @@
 }
 
 .education {
-    height: 115px;
+    height: 110px;
 }
 
 .honor {
@@ -56,11 +56,11 @@
 }
 
 .experience {
-    height: 230px;
+    height: 310px;
 }
 
 .project {
-    height: 400px;
+    height: 800px;
 }
 
 .self-evaluation {
@@ -151,6 +151,12 @@
 
 .mt-5px {
     margin-top: 5px;
+}
+.mb-5px {
+    margin-bottom: 5px;
+}
+.mb-3px {
+    margin-bottom: 3px;
 }
 
 .image-container {

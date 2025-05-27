@@ -30,16 +30,16 @@
             <div class="education common-padding relative">
                 <div class="header">教育背景</div>
                 <div class="horizontal-line"></div>
-                <div class="flex justify-between mt-5px">
+                <div class="flex justify-between mt-5px text-14">
                     <div class="text-bold">吉林农业大学(本科)</div>
                     <div class="text-bold">数据科学与大数据技术</div>
                     <div class="text-bold">2020.09 - 2024.06</div>
                 </div>
-                <div class="mt-5px flex gap-10px">
+                <div class="mt-5px flex gap-10px text-14">
                     <span class="text-bold">GPA：</span><span>4.01</span>
                     <span class="text-bold">专业前1%</span><span>(1/65)</span>
                 </div>
-                <div class="mt-5px">
+                <div class="mt-5px text-14">
                     <span class="text-bold">主修课程：</span><span>机器学习，算法分析与设计，Java 程序设计，python 程序设计，数据分析，数据结构等</span>
                 </div>
             </div>
@@ -72,14 +72,63 @@
             <div class="experience common-padding relative">
                 <div class="header">工作经历</div>
                 <div class="horizontal-line"></div>
+                <div class="mt-5px">
+                    <div class="text-bold mb-3px">字节跳动</div>
+                    <div class="text-bold text-14 flex justify-between mb-3px">
+                        <div>全栈开发（实习）</div>
+                        <div>2024.01 ~ 2024.06</div>
+                    </div>
+                    <div class="skill-item"><span class="bullet">●</span>参与智能 BI 平台的设计与开发，负责前后端功能实现与优化。</div>
+                    <div class="skill-item"><span class="bullet">●</span>协同产品完成需求分析与原型设计，独立完成功能测试与缺陷修复。</div>
+                    <div class="skill-item"><span class="bullet">●</span>负责前端通用组件的封装与维护，参与 Prompt（提示词）策略的更新与优化。</div>
+                    <div class="text-bold text-14 flex justify-between mb-3px">
+                        <div>全栈开发</div>
+                        <div>2024.07 ~ 至今</div>
+                    </div>
+                    <div class="skill-item"><span class="bullet">●</span>参与数据治理体系相关工具的开发，涵盖数据采集、数据管理与数据资产等核心平台。主要负责数据采集平台的研发，支持多源异构数据（数据库、文档、接口等）的接入与实时同步至数据仓库。完成多类数据源采集模块的设计与开发。</div>
+                    <div class="skill-item"><span class="bullet">●</span>参与公司基础开发框架的建设，负责跨部门需求调研与技术选型，推动统一技术栈。参与前端公共样式、页面框架布局、工具方法、通用组件的封装与优化。参与后端权限控制等核心功能模块的设计与实现。</div>
+                    <div class="skill-item"><span class="bullet">●</span>参与 AI 及大模型等前沿技术的研究与应用落地，聚焦智能问答场景。主导智能问答机器人的研发，综合应用大语言模型、知识库、TTS 与 ASR 等技术，实现机器人具备离线问答能力，并能结合本地知识库完成个性化、语音化的回答。</div>
+                </div>
             </div>
             <div class="project common-padding relative">
                 <div class="header">项目经历</div>
                 <div class="horizontal-line"></div>
+                <div class="mt-5px">
+                    <div class="text-bold mb-3px text-14">数据采集平台</div>
+                    <div class="text-14"><span class="text-bold">项目描述：</span><span>项目实现对数据库、消息队列、文档及接口等多源数据的统一采集，采用 Flink 进行流式处理（实时采集）与批处理（定时任务）相结合的方式，汇总至 Paimon 数据湖。支持采集任务配置、调度策略管理及运行状态监控。</span></div>
+                    <div class="text-bold mb-3px text-14">项目职责：</div>
+                    <div class="skill-item"><span class="bullet">●</span>独立完成数据库采集、接口采集、文档集 等模块的开发，实现关系型数据库（如MySQL、PostgreSQL）、REST API和结构化文件(Ecxel,csv) 消息队列等数据源数据的采集。</div>
+                    <div class="skill-item"><span class="bullet">●</span>采用 Quartz 定时任务框架封装批处理调度模块，将部分不常变动的数据以定时批量方式同步至数仓，降低 Flink 实时任务负载，提升系统整体资源利用率。</div>
+                    <div class="skill-item"><span class="bullet">●</span>基于Flink REST API二次开发监控看板，实现任务的实时监控与告警，并支持任务的启停控制。提升了系统的可维护性，降低运维成本。</div>
+                </div>
+                <div class="mt-5px">
+                    <div class="text-bold mb-3px text-14">离线知识引擎</div>
+                    <div class="text-14"><span class="text-bold">项目描述：</span><span>该项目基于ASR（自动语音识别）、LLM（大语言模型）、TTS（文本转语音）和知识向量库技术，开发了一套高效的离线问答系统，能够在边缘设备 上运行。系统通过集成定制的知识库，实现智能问答功能，支持语音输入和语音输出，无需依赖网络环境。并在公司规章制度的问答上进行了应用。</span></div>
+                    <div class="text-bold mb-3px text-14">项目职责：</div>
+                    <div class="skill-item"><span class="bullet">●</span>独立完成整体功能设计与实现。</div>
+                    <div class="skill-item"><span class="bullet">●</span>利用Dify工作流整合语音和大语言模型以及知识库，简化开发流程。实现不同的ASR、LLM、TTS 模型的组合，可根据硬件水平来动态调整，模型方案，实现在低配设备上也能低延迟交互。</div>
+                    <div class="skill-item"><span class="bullet">●</span>添加自定义音色功能；通过上传模板音色音频，实现对该音色的克隆，增加了可定制性，提高了项目价值。</div>
+                    <div class="skill-item"><span class="bullet">●</span>使用ASR PRO硬件模块 实现了自定义唤醒词的唤醒和打断功能。与传统的声音阈值和 ASR 监听技术相比，系统的唤醒速度几乎达到零延迟，且唤醒/打断准确率提升了近 50%。</div>
+                </div>
+                <div class="mt-5px">
+                    <div class="text-bold mb-3px text-14">涉案人员分析研判模型</div>
+                    <div class="text-14"><span class="text-bold">项目描述：</span><span>该项目基于ASR（自动语音识别）、LLM（大语言模型）、TTS（文本转语音）和知识向量库技术，开发了一套高效的离线问答系统，能够在边缘设备 上运行。系统通过集成定制的知识库，实现智能问答功能，支持语音输入和语音输出，无需依赖网络环境。并在公司规章制度的问答上进行了应用。</span></div>
+                    <div class="text-bold mb-3px text-14">项目职责：</div>
+                    <div class="skill-item"><span class="bullet">●</span>该项目通过人员信息、关联信息、银行流水、通话记录等多种数据上传，实现了对用户行为的综合分析与统计。系统能够直观呈现关键数据指标，如交易信息、通话记录、频繁交易、资金流向、为纪委提供精准的决策支持。</div>
+                    <div class="skill-item"><span class="bullet">●</span>负责人员相关数据库表的设计，与后端接口编写；前端layout布局的设计与实现，整体样式的统一。</div>
+                    <div class="skill-item"><span class="bullet">●</span>负责人员信息及其银行流水相关数据上传功能开发，采用OCR和大语言模型，对人员简历信息进行提取，实现对人员信息的自动补全，提高了上传效率。</div>
+                    <div class="skill-item"><span class="bullet">●</span>负责人员关系信息维护；可视化关系图谱。可在图谱上观察到资金往来，通话频等消息。</div>
+                    <div class="skill-item"><span class="bullet">●</span>负责快转快出分析功能实现，通过设定异常阈值、时间阈值、出入比阈值，寻找出疑似转入/转出人员姓名、交易时间和交易金额，方便办案人员标记线索。</div>
+                </div>
             </div>
             <div class="self-evaluation common-padding relative">
                 <div class="header">自我评价</div>
                 <div class="horizontal-line"></div>
+                <div class="mt-5px">
+                    <div class="skill-item"><span class="bullet">●</span>关注前沿技术发展，有稳定的信息获取渠道，喜欢主动尝试新工具、新方法并结合实际落地应用。如：率先使用 Cursor 等 AI 编程工具并推动团队采用，组织相关培训，提升整体开发效率。</div>
+                    <div class="skill-item"><span class="bullet">●</span>有着较强的学习能力和持续学习的理念，善于利用空余时间学习新技术提升自己，有刷题习惯，LeetCode200+。</div>
+                    <div class="skill-item"><span class="bullet">●</span>生活积极乐观，热爱运动，月跑量100公里左右，参加过马拉松，半马成绩1h53m。</div>
+                </div>
             </div>
         </div>
     </div>
